@@ -148,7 +148,7 @@ open class ImageScrollView: UIScrollView {
         contentOffset = offset
     }
 
-    func resetZoom() {
+    public func resetZoom() {
         let maxZoomScale = max(minimumZoomScale, scaleToRestoreAfterResize)
         zoomScale = min(maximumZoomScale, maxZoomScale)
     }
